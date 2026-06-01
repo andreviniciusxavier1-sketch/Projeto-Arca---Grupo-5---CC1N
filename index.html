@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./content/img/favicon/ArcaIcon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css" rel="stylesheet">
+    <title>Projeto Arca</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="headerLogo">
+                <img src="./content/img/logo.svg" alt="Logo Projeto Arca">
+            </div>
+            <div class="headerMenu">
+                <ul type="none" class="navmenulist">
+                    <div class="navMenu">
+                        <li id="servicos">Serviços <i class="ri-arrow-drop-down-line"></i></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Contatos</a></li>
+                        <li><svg class="linenav" height="35" width="6" xmlns="http://www.w3.org/2000/svg">
+                                <line  x1="0" y1="0" x2="0" y2="35" stroke-linecap="round" style="stroke: #F0EEE9;stroke-width: 6px;" />
+                            </svg>
+                        </li>
+                        <li><a href="./content/pages/html/login.html"><i class="ri-user-3-fill"></i></a></li>
+                    </div>
+                    
+                </ul>
+            </div>
+        </nav>
+            <div class="intro">
+                <div class="introtxt">
+                    <h1>Bem vindo ao</h1>
+                    <h1 id="programaarca">Programa Arca!</h1>
+                    <p>Acreditamos que todo animal merece amor, respeito e uma segunda chance. O Programa Arca atua incansavelmente para acolher, tratar e proteger cães e gatos na nossa região. Construa conosco um futuro onde o cuidado e a proteção animal sejam a nossa maior marca.</p>
+                    <button class="HomepageBtn">Participe Já</button>
+                </div>
+                <div class="introimg">
+                    <img src="./content/img/animal.png" alt="Imagem Introdutoria">
+                </div>
+            </div>
+    </header>
+    <main>
+        <section class="eventosnoticias">
+            <div class="noticiastxt">
+                <h3>notícias e eventos</h3>
+                <p>Eventos especiais com participações de ONG’S para você que ama animais!</p>
+            </div>
+            <div class="sliderwrapper">
+                <div class="imagensslider">
+                    <div class="noticia">
+                        <img src="./content/img/Orange Cat.png" alt="Imagem de Notícia 1">
+                        <div class="noticiatxt">
+                            <h4>saiba mais!</h4>
+                            <p class="noticiaP">Lorem Epsun</p>
+                        </div>
+                    </div>
+                    <div class="noticia">
+                        <img src="./content/img/Doggo.png" alt="Imagem de Notícia 2">
+                        <div class="noticiatxt">
+                            <h4>saiba mais!</h4>
+                            <p class="noticiaP">Lorem Epsun</p>
+                        </div>
+                    </div>
+                    <div class="noticia">
+                        <img src="./content/img/Doc.png " alt="Imagem de Notícia 3">
+                        <div class="noticiatxt">
+                            <h4>saiba mais!</h4>
+                            <p class="noticiaP">Lorem Epsun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="botoes">
+                    <button id="notprev" onclick="moverNoticias(-1)"><i class="ri-arrow-left-s-line"></i></button>
+                    <div class="markers">
+                        <ul type="none" class="pontosmarker">
+                            <li class="marker" onclick="noticiaAtual(1)">-</li>
+                            <li class="marker" onclick="noticiaAtual(2)">-</li>
+                            <li class="marker" onclick="noticiaAtual(3)">-</li>
+                        </ul>
+                    </div>
+                    <button id="notnext" onclick="moverNoticias(1)"><i class="ri-arrow-right-s-line"></i></button>
+                </div> 
+                
+            </div>       
+        </section>
+        <section class="denuncia">
+            <div class="denunciatxt">
+
+            </div>
+            <div class="denunciaimg">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
