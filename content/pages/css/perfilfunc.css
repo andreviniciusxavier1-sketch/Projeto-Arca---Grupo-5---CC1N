@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+
+:root {
+    --primary-dark: #BF947A;
+    --primary-light: #D9A993;
+    --orange: #DD8232;
+    --red: #B32000;
+    --green: #738C65;
+    --second-darkest: #160F0B;
+    --second-darker: #3E291C;
+    --second-dark: #432D1F;
+    --second-light: #743019;
+    --gradient: linear-gradient(var(--second-light), var(--second-darkest));
+    --background-white1: #D5D5D1;
+    --background-white2: #F0EEE9;
+    --accent-white: #ffffff;
+    --accent-black: #000000;
+    --text-dark: rgb(22 15 11 / 90%); 
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sub1{
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 1.24px;
+    line-height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "sidebar main"
+    "sidebar main"
+    "sidebar footer";
+    background-color: var(--background-white1);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    grid-area: main;
+    padding: 20px;
+    min-width: 50vw;
+    min-height: 100vh;
+    max-width: 960px;
+}
+
+main .meus{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tabela {
+    margin-top: 40px;
+    width: 100%;
+    gap: 30px;
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 0.2px;
+    line-height: 104%;
+}
+
+.home a{
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.add{
+    background-color: var(--green);
+    color: var(--background-white2);
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 104%;
+    border: 2px solid var(--background-white1);
+    width: 50vw;
+    height: 38px;
+    border-radius: 15px;
+    transition: 0.2s;
+    min-width: 359px;
+}
+
+.add:hover{
+    color: var(--green);
+    background-color: var(--background-white1);
+    border-color: var(--green);
+}
+
+.pfp{
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--text-dark);
+    border-radius: 100px;
+    background-image: url(../../img/Jorge.png);
+    background-size: cover;
+}
+
+aside{
+    max-width: 460px;
+    min-height: 100vh;
+    gap: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-area: sidebar;
+    background-color: var(--background-white2);
+    align-items: center;
+     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+aside a:not(.sair){
+    text-decoration: none;
+}
+
+.links{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 28px;
+    flex-shrink: 1;
+    text-align: center;
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    gap: 1em;
+    margin-bottom: 62px;
+    margin-top: 25px;
+}
+
+.denuncialink, .a{
+    transition: 0.2s;
+}
+
+.Sair{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 28px;
+    flex-shrink: 1;
+    text-align: center;
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    background-color: var(--red);
+    color: var(--background-white2);
+    width: 196px;
+    border-radius: 75px;
+    border: 2px solid var(--background-white2);
+    transition: 0.2s;
+}
+
+.Sair:hover{
+    border-color: var(--red);
+    background-color: var(--background-white2);
+    color: var(--red);
+}
+
+.links > .a {
+    border: 2px solid var(--orange);
+    border-radius: 75px;
+    color: var(--orange);
+    background-color: var(--background-white2);
+}
+ 
+.denuncialink { 
+    border: 2px solid var(--background-white2);
+    border-radius: 75px;
+    background-color: var(--orange);
+    color: var(--background-white2);
+}
+
+.a:hover{
+    background-color: var(--orange);
+    color: var(--background-white2);
+    border-color: var(--background-white2);
+}
+
+.denuncialink:hover{
+    border-color: var(--orange);
+    color: var(--orange);
+    background-color: var(--background-white2);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 16px;
+    color: var(--text-dark);
+}
+
+.home h4{
+    font-size: 52px;
+    letter-spacing: 0.52px;
+}
+
+.home i{
+    font-size: 30px;
+}
+
+.basicinfo{
+    display: flex;
+    align-items: center;
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    gap: 16px
+}
+
+.infotxt {
+    display: flex;
+    flex-direction: column;
+}
+
+.addpet > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 25px;
+}
+
+.addpet input {
+    width: 50vw;
+    box-sizing: border-box;
+    max-height: 40px;
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 105%;
+    padding: 10px;
+    background-color: var(--background-white1);
+    border: 2px solid var(--text-dark);
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.save {
+    background-color: var(--background-white1);
+    color: var(--green);
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 104%;
+    border: 2px solid var(--green);
+    width: 50vw;
+    height: 38px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.save:hover{
+    background-color: var(--green);
+    border-color: var(--background-white1);
+    color: var(--background-white2);
+}
+
+.cancel {
+    background-color: var(--background-white1);
+    color: var(--red);
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 104%;
+    border: 2px solid var(--red);
+    width: 50vw;
+    height: 38px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.cancel:hover{
+    background-color: var(--red);
+    border-color: var(--background-white1);
+    color: var(--background-white2);
+}
+
+.delete{   
+    background-color: var(--red);
+    color: var(--background-white2);
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 104%;
+    border: 2px solid var(--background-white1);
+    width: 50vw;
+    height: 38px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.delete:hover{
+    background-color: var(--background-white1);
+    border-color: var(--red);
+    color: var(--red);
+}
+
+.editpet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px   ;
+}
+
+.editpet input{
+    width: 50vw;
+    box-sizing: border-box;
+    max-height: 40px;
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 105%;
+    padding: 10px;
+    background-color: var(--background-white1);
+    border: 2px solid var(--text-dark);
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+input:hover{
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+.editpet, .addpet{
+    display: none;
+}
+
+.tabela > tbody {
+ text-align: center;
+}
+
+.sidemenu > ul{
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.sidemenu > ul >li:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.myprofile{
+    color: var(--orange);
+}

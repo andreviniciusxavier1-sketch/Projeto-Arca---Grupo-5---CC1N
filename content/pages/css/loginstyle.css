@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+
+:root {
+    --primary-dark: #BF947A;
+    --primary-light: #D9A993;
+    --orange: #DD8232;
+    --red: #B32000;
+    --green: #738C65;
+    --second-darkest: #160F0B;
+    --second-darker: #3E291C;
+    --second-dark: #432D1F;
+    --second-light: #743019;
+    --gradient: linear-gradient(var(--second-light), var(--second-darkest));
+    --background-white1: #D5D5D1;
+    --background-white2: #F0EEE9;
+    --accent-white: #ffffff;
+    --accent-black: #000000;
+    --text-dark: rgb(22 15 11 / 90%); 
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #EFEFEF;
+    background-image: url(../../img/catioro\ fundo4.png);
+    background-repeat: no-repeat;
+    background-position: left -220px;
+    overflow-x: hidden;
+    background-color: var(--background-white1);
+}
+
+h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+    letter-spacing: 0.96px;
+}
+
+h2 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+    letter-spacing: 0.72px;
+    line-height:100%;
+}
+
+h3 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    letter-spacing: 0.64px;
+}
+
+h4 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 52px;
+    letter-spacing: 0.52px;
+}
+
+.sub1{ 
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 1,24px;
+    line-height:105%;
+}
+
+p {
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-end;
+    padding: 11px;
+}
+
+header a{
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+    max-height: 99.6px;
+    align-items: center;
+}
+
+nav a{
+    font-size: 64px;
+}
+
+nav img{
+    max-height: 99.6px;
+    max-width: 247px;
+    margin-right: auto;
+}
+
+.loginpage{
+    background-color: #F0EEE9;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 64px;
+    max-width: 684px;
+    height:  100vh;
+    box-sizing: border-box;
+    margin-left: 11px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);;
+}
+
+.logintxt{
+    color: var(--text-dark);
+}
+
+.loginforminput{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0;
+    max-width: 556px;
+    max-height: 177px;
+}
+
+.loginforminput input {
+    box-sizing: border-box;
+    max-height: 40px;
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 105%;
+    padding: 10px;
+    background-color: var(--background-white2);
+    border: 2px solid var(--text-dark);
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.loginforminput input:hover{
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+.loginforminput2{
+    display: flex;
+    max-height: 17px;
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.loginforminput2 label{
+    margin-right: auto;
+}
+
+.loginforminput2 a:hover{
+    text-decoration: underline;
+    color: var(--orange);
+}
+
+.loginformbtn {
+    display: flex;
+    flex-direction: column;
+    max-width: 556px;
+    max-height: 112px;
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 105%;
+    gap: 16px;
+    justify-content: center;
+}
+
+.loginformbtn a{
+    color: var(--orange);
+    justify-self: center;
+    background-color: transparent;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid var(--orange);
+    border-radius: 25px;
+    max-height: 48px;
+    transition: 0.2s;
+}
+
+.loginformbtn button{
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    background-color: var(--orange);
+    color: var(--background-white2);
+    max-height: 48px;
+    border-radius: 25px;
+    transition: 0.2s;
+    border: 2px solid transparent;
+}
+
+.loginformbtn button:hover{
+    background-color: var(--background-white2);
+    border: 2px solid var(--orange);
+    color: var(--orange);
+}
+
+.loginformbtn a:hover{
+    background-color: var(--orange);
+    color: var(--background-white2);
+}
+
+.entrargov{
+    display: none;
+    flex-direction: column;
+}

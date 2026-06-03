@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+
+:root {
+    --primary-dark: #BF947A;
+    --primary-light: #D9A993;
+    --orange: #DD8232;
+    --red: #B32000;
+    --green: #738C65;
+    --second-darkest: #160F0B;
+    --second-darker: #3E291C;
+    --second-dark: #432D1F;
+    --second-light: #743019;
+    --gradient: linear-gradient(var(--second-light), var(--second-darkest));
+    --background-white1: #D5D5D1;
+    --background-white2: #F0EEE9;
+    --accent-white: #ffffff;
+    --accent-black: #000000;
+    --text-dark: rgb(22 15 11 / 90%); 
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Dongle", sans-serif;
+
+
+}
+
+body{
+    margin: 24px 240px;
+    background-color: #D5D5D1;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 105%;
+    letter-spacing: 4%;
+}
+header > div{
+    display: flex;
+    align-items: center;
+}
+header > nav{
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+    color: var(--text-dark);
+}
+
+header > nav > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 48px;
+}
+
+header > nav > ul > li{
+    cursor: pointer;
+}
+
+.lci{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.menu.active .seta{
+    transform: rotate(180deg);
+}
+
+.menu{
+    position: relative;
+    display: inline-block;
+}
+.menu-open{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 16px;
+    top: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 105%;
+    letter-spacing: 4%;
+    padding: 16px;
+    list-style: none;
+    border-radius: 20px;
+    background-color: rgba(240, 238, 233, 0.9);
+    display: none;
+    cursor: pointer;
+    
+}
+
+.menu-open li:hover{
+    color: rgb(46, 36, 30, 0.9);
+}
+
+.menu.active .menu-open{
+    display: block;
+}
+
+.lci2{
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    gap: 4px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap: 16px;
+    color: var(--text-dark);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    gap: 48px;
+    width: 640px;
+    height: fit-content;
+    background-color: #F0EEE9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.25);
+}
+
+.box h2{
+    font-family: "Bowlby One SC", sans-serif;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-align: center;
+    font-weight: normal;
+}
+
+.box .sub1r{
+     font-family: "Dongle", sans-serif;
+     font-size: 32px;
+     line-height: 105%;
+     letter-spacing: 4%;
+     font-weight: normal;
+}
+
+.box ul{
+    list-style-position: inside;
+}
+
+.box li{
+    font-family: "Dongle", sans-serif;
+    font-size: 32px;
+    line-height: 105%;
+    letter-spacing: 4%;
+    font-weight: bold;
+    color: #B32000;
+}
+
+.box li::marker{
+    font-size: 0.6em;
+}
+
+.box .sub2r{
+    font-family: "Dongle", sans-serif;
+    font-size: 24px;
+    line-height: 105%;
+    letter-spacing: 4%;
+    font-weight: normal;
+}
+
+.txt2{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.img-animais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 100%;      
+    height: auto;  
+    display: block;
+}
+
+@media (max-width: 1440px){
+   body{
+        margin: 24px 80px;
+        background-color: #D5D5D1;
+    }    
+}

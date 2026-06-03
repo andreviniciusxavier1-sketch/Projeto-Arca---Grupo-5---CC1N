@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon/ArcaIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/perfilcidadao.css">
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css" rel="stylesheet">
+    <title>Perfil Cidadao</title>
+</head>
+<body onload="lerDados()">
+    <aside>
+         <div class="home"> 
+            <a href="./homepagetutor.html">
+                <i class="ri-menu-2-line"></i>
+            </a>
+            <a href="./homepagetutor.html">
+                <h4>home</h4>
+            </a>
+        </div>
+        <div class="sidemenu">
+            <ul type="none">
+                <li class="myprofile">Meu Perfil</li>
+                <li>Agendamentos</li>
+            </ul>
+            <div class="links">
+                <a href="#" class="a">Adotar um Pet</a>
+                <a href="./denunciacidadao.html" class="denuncialink">Fazer Denúncia & Resgate</a>
+            </div>
+            <div class="noticiavertical">
+                <img src="../../img/Frame 1000005368.png" alt="Noticia vertical">
+            </div>
+        </div>
+            <a href="../../../index.html" class="Sair">Sair</a>
+    </aside>
+    <main>
+        <div class="info">
+            <div class="basicinfo">
+                <div class="pfp"></div>
+                <div class="infotxt">
+                <p class="sub1">Joaquina Caliari Matos</p>
+                <p>Vila Velha, Brasil</p>
+                </div>
+            </div>
+            <p class="sub1 meus"> Meus Pets</p>
+            <button class="add" onclick="Addform()">Add +</button>
+            <table class="tabela">
+                <thead>
+                        <th>Nome</th>
+                        <th>Nascimento</th>
+                        <th>Editar</th>                    
+                </thead>
+                <tbody class="tabela-dados">
+
+                </tbody>
+            </table>
+            <div class="adicionarpets">
+                <form class="addpet">
+                    <label for="petnome">Nome do pet</label>
+                    <input id="petnome" type="text" placeholder="Nome do pet" class="petnome">
+                    <br>
+                    <label for="idadepe">Data de Nascimento do Pet</label>
+                    <input id="petnasc" type="date" placeholder="Sobrenome" class="petnasc">
+                    <button type="button" class="save" onclick="Addpet()">Add pet</button>
+                    <button type="button" class="cancel">Cancelar</button>
+                </form>
+            </div>
+            <div class="pets">
+                <div class="formpet">
+                    <form class="editpet">
+                        <input type="text" hidden class="uid">
+                        <label for="petname">Nome do pet</label>
+                        <input id="petname" type="text" placeholder="Nome do pet" class="unome">
+                        <br>
+                        <label for="idadepet">Data de Nascimento do Pet</label>
+                        <input id="idadepet" type="date" class="unasc">
+                        <button type="button" class="save" onclick=" Update()">Salvar alterações</button>
+                        <button type="button" class="cancel">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../javascript/usuario.js"></script>
+</body>
+</html>
