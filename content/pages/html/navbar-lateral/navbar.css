@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Dongle&display=swap');
 
 :root {
     --color-1: #F0EEE9;
@@ -6,14 +7,98 @@
     --accent-color: #2C2521;
 }
 
+.adocao2 {
+    color: #f2a35e;
+}
+.denuncia2 {
+    color: #fdfdfd;
+}
+.sair2{
+        color: #fdfdfd;
+}
+.sair{
+    background-color: #b32000;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 270px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 30px;
+    border-width: 2px;
+    border-style: solid;
+    height: 30px;
+    display: flex;  
+    align-items: center;
+    margin-top: 10px;
+}
 
-img{
+.adocao{
+    background-color: #F0EEE9;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 270px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dd8232;
+    color: #F2A35E;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.denuncia{
+    background-color: #dd8232;
+    border-radius: 20px;
+    width: 270px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  
+}
+.sidehome{
+    display: flex;
+    font-size: 50px;
+    padding: 0px;
+    width: 300px;
+    font-size: 30px;
+}
+.noticias {
+    margin-left: 10px;
+    margin-bottom: -20px;
+    padding: 0;
+}
+.sidehome a{
+    display: flex;
+    font-size: 50px;
+    padding: 0px;
+}
+.home-link{
+    font-family: Bowlby One SC;
+    margin-top: 50px;
+}
+.sideoptions a{
+    padding: 0px;
+    margin-left: 40px;
     height: 50px;
-    margin: 20px 0px 0px 20px;
+}
+.sideoptions {
+    margin-bottom: 20px;
+}
+img{
+    margin-top: 60px;
+    margin-left: 40px;
+    height: 50px;
+    margin-right: 5px;
 }
 .evento{
     height: 500px;
-    margin: 0;
+    margin: 0 0px 0px 20px;
 }
 
 *{
@@ -34,7 +119,7 @@ html {
     top: 0;
     left: -100%;
     z-index: 10;
-    width: 300px;
+    width: 350px;
     background-color: #F0EEE9;
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
     transition: 1s ease-out;
@@ -53,13 +138,13 @@ nav a{
     justify-content: flex-start;
 }
 
-nav a:hover::before{
+nav a:not(.excecao):hover::before{
     content: "|";
     color: #2C2521;
     margin-right: 5px;
 }
 
-nav a:hover{
+nav a:not(.excecao):hover{
     color: #DF8D44;
 }
 nav .home-link{

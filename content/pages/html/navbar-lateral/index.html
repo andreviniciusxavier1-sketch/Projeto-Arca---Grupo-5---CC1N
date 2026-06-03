@@ -1,33 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-    <link rel="stylesheet" href="navbar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
     <nav>
-        <input type="checkbox" id="sidebar-active" class="open-sedebar-button">
-        <label for="sidebar-active">
-            <img src="menu3.svg" alt="barra lateral aberta">
-        </label>
-        <label id="overlay" for="sidebar-active"></label>
-        <div class="links-container">
-            <label for="sidebar-active" class="closed-sedebar-button">
-                <img src="close3.svg" alt="barra lateral fechada">
-            </label>
-            <a class="home-link" href="">Home</a>
-            <a href="">Meu perfil</a>
-            <a href="">Cadastrar pets</a>
-            <a href="">Agendamentos</a>
-            <img class="evento" src="noticia.png" alt="esquilo top">
-            <a href="">Sair</a>
+      <input type="checkbox" id="sidebar-active" class="open-sedebar-button" />
+      <label for="sidebar-active">
+        <img src="menu3.svg" alt="barra lateral aberta" />
+      </label>
+      <label id="overlay" for="sidebar-active"></label>
+      <div class="links-container">
+        <div class="sidehome">
+          <label for="sidebar-active" class="closed-sedebar-button">
+            <img src="close3.svg" alt="barra lateral fechada" />
+          </label>
+          <a class="home-link" href="">HOME</a>
         </div>
-
-
-            
+        <div class="sideoptions">
+          <a href="">Meu perfil</a>
+          <a href="">Cadastrar Pet</a>
+          <a href="">Agendamentos</a>
+          <a href="">Admnistrador</a>
+          <div class="adocao" >
+          <a href="" class="excecao adocao2">Colocar pet para adoção</a>
+          </div>
+          <div class="denuncia">
+          <a href="" class="excecao denuncia2">Fazer denúncia & Resgate</a>
+          </div>
+          
+        </div>
+        
+        <img class="evento" src="noticia.jpeg" alt="esquilo top" />
+       
+        <div class="sideoptions">
+        <div class="sair">
+        <a href="" class="excecao sair2">Sair</a>
+        </div>
+        </div>
+      </div>
     </nav>
-</body>
+  </body>
 </html>
